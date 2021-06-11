@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Signika+Negative:wght@300;600&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0 7rem 19px 7rem;
+    
+ }
+#container {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 6rem;
+}
+h1 {
+    font-family: 'Signika Negative', sans-serif;
+}
+h4 {
+    display: flex;
+    justify-content: center;
+    font-family: 'Signika Negative', sans-serif;
+    padding-top: 4rem;
+}
+input {
+    border-radius: 5px;
+    border: 2px solid #f0f0f0;
+    width: 15rem;
+    padding: 4px;
+}
+input:focus {
+    outline: 0;
+}
+#meal {
+    display: grid;
+    grid-template-columns:  repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+
+}
+.meal-name a {
+    background-color: red;
+    border-radius: 5px;
+    color: #fff;
+    text-decoration: none;
+    padding: 5px;
+    display: flex;
+    font-family: 'Signika Negative', sans-serif;
+
+}
+.not-found {
+    color: red;
+    grid-template-columns: 1fr!important;
+    width: 100%;
+    font-size: 35px;
+    margin: 10vh 30vw;
+    font-family: 'Signika Negative', sans-serif;
+}
+.btn-input button {
+    background-color: red;
+    outline: none;
+    width: 3rem;
+    padding: 6px;
+    color: #fff;
+    border-radius: 10px;
+    border: none;
+
+}
+#meal img {
+    display: block;
+    width: 100%;
+    box-shadow: 5px 10px 8px #888888;
+    
+}
+
+.modal-container {
+    background-color: rgba(0, 0, 0, 0.6);
+    overflow: scroll;
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.show-modal {
+    display: block;
+}
+.modal-container::-webkit-scrollbar {
+    width: 10px;
+}
+.modal-container::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+.modal-container::-webkit-scrollbar-thumb {
+    background: #888;
+}
+.modal-container::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+.modal {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0, 0.3);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+}
+
+.modal h3 {
+    font-family: 'Signika Negative', sans-serif;
+}
+.modal-container button {
+    background-color: red;
+    color: #fff;
+    cursor: pointer;
+    font-size: 25px;
+    border: none;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    padding: 10px;
+    border-radius: 30px;
+}
+.modal-instruction {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.modal-header {
+    color: #fff;
+    background-color: red;
+    font-size: 20px;
+    padding-bottom: 9px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.modal-header img {
+    width: 20%;
+    border-radius: 100px;
+}
+.modal-header h3 {
+    padding-left: 10px;
+    padding-bottom: 5px;
+    margin: 0;
+}
